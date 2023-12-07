@@ -1,0 +1,31 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "Livro 01",
+    "autor": "Autor 01",
+    "npaginas": 450
+}
+
+###
+
+GET http://localhost:3333/livro
+
+###
+
+GET http://localhost:3333/livro?search=Piracicaba+em+chamas
+
+###
+
+PUT http://localhost:3333/livro/8e0a64b0-4d20-4d21-8073-6788691d24fc
+Content-Type: application/json
+
+{
+    "titulo": "Piracicaba em chamas",
+    "autor": "Junin da Boca Torta",
+    "npaginas": 450
+}
+
+###
+
+DELETE http://localhost:3333/livro/8e0a64b0-4d20-4d21-8073-6788691d24fc
